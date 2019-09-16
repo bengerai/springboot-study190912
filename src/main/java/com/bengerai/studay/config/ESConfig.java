@@ -20,15 +20,15 @@ public class ESConfig {
     public TransportClient client() throws UnknownHostException {
 
         //9300是es的tcp服务端口
-        InetSocketTransportAddress node =
+        final InetSocketTransportAddress node =
                 new InetSocketTransportAddress(InetAddress.getByName("127.0.0.1"), 9300);
 
         // 设置es节点的配置信息
-        Settings settings =
+        final Settings settings =
                 Settings.builder().put("cluster.name", "es").build();
 
         // 实例化es的客户端对象
-        TransportClient client = new PreBuiltTransportClient(settings);
+        final TransportClient client = new PreBuiltTransportClient(settings);
         client.addTransportAddress(node);
         return client;
     }

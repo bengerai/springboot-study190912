@@ -11,7 +11,7 @@
     <groupId>com.bengerai.studay</groupId>
     <artifactId>springboot-study190912</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-study190912</name>
+    <name>study190912</name>
     <description>Spring Boot集成ElasticSearch测试</description>
 
     <properties>
@@ -34,12 +34,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
         </dependency>
 
         <!-- servlet 依赖包 -->
